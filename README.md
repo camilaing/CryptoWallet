@@ -5,7 +5,6 @@ iOS App that displays the 10 most valued cryptocurrency coins
 ## Table of Contents
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
@@ -21,11 +20,6 @@ iOS App that displays the 10 most valued cryptocurrency coins
 - CoinGecko API fetching 
 - 10 most valued cryptocurrency coins detailed listed 
 - Settings screen: Picker component that lists the cryptocurrency coins, Number TextField to insert the desired value for alert
-
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
