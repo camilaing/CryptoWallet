@@ -32,12 +32,16 @@ class CryptoListViewModel: ObservableObject {
             if let error = error {
                 self.isLoading = false
                 self.serviceError = ServiceError(errorString: error.localizedDescription)
+#if DEBUG
                 print("DEBUG: Error \(error.localizedDescription)")
+#endif
                 return
             }
             
             if let response = response as? HTTPURLResponse {
+#if DEBUG
                 print("DEBUG: Response code \(response.statusCode)")
+#endif
             }
             
             guard let data = data else { return }
@@ -52,7 +56,9 @@ class CryptoListViewModel: ObservableObject {
             } catch let error {
                 self.isLoading = false
                 self.serviceError = ServiceError(errorString: error.localizedDescription)
-                print("DEBUG: Failed to decode with error: \(error)")
+#if DEBUG
+                print("DEBUG: Error \(error.localizedDescription)")
+#endif
             }
         }.resume()
     }
