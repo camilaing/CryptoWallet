@@ -29,7 +29,7 @@ iOS App that displays the 10 most valued cryptocurrency coins
 
 
 ## Setup
-Once the project is cloned, run `pod install` to dowload and install the dependencies
+Once the project is cloned, run `pod install` to dowload and install the dependencies,
 iOS 15 or later is required
 
 
